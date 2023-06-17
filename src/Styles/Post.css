@@ -1,0 +1,40 @@
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+}
+
+.post h3 {
+  margin-top: 0;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.post-buttons button {
+  margin-left: 5px;
+}
+
+/* Random background color for each post */
+.post:nth-child(odd) {
+  background-color: #e6f7ff;
+}
+
+.post:nth-child(even) {
+  background-color: #f9f9f9;
+}

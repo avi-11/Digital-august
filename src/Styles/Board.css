@@ -1,0 +1,109 @@
+/* Board.css */
+.board-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.board {
+  border: 1px solid #ccc;
+  background-color: bisque;
+  padding: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.board h2 {
+  margin-top: 0;
+}
+
+.board-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.board-buttons button {
+  margin: 5px;
+}
+
+/* Align posts horizontally */
+.board .posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Add spacing between posts */
+.board .post {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Apply different background color for posts */
+.board .post:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+/* Styling for the form section */
+.board form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.board form input[type="text"],
+.board form textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.board form button[type="submit"] {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: green;
+  border: 1px solid green;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.board form button[type="submit"]:hover {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
+
+.board form button.cancel-button {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.board form button.cancel-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
